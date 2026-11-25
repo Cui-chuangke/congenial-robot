@@ -3,6 +3,7 @@
 
 import argparse
 import csv
+import math
 from pathlib import Path
 import sys
 
@@ -80,6 +81,8 @@ def positive_number(value: str, name: str, *, allow_zero: bool = False) -> float
         number = float(value)
     except ValueError as error:
         raise ValueError(f"{name} must be a number") from error
+    if not math.isfinite(number):
+        raise ValueError(f"{name} must be finite")
     if number < 0 or (number == 0 and not allow_zero):
         requirement = "non-negative" if allow_zero else "greater than zero"
         raise ValueError(f"{name} must be {requirement}")
@@ -110,9 +113,9 @@ def main() -> int:
         overrides = parse_overrides(args.overrides, assumptions)
 
         selected_names = DEFAULT_PARAMETER_NAMES.copy()
-        for parameter, candidate_names in PARAMETER_NAMES.items():
-            for name in candidate_names:
-                if name in overrides:
+        for name in overrides:
+            for parameter, candidate_names in PARAMETER_NAMES.items():
+                if name in candidate_names:
                     selected_names[parameter] = name
 
         values = {}
