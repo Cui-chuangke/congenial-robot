@@ -1,0 +1,15 @@
+{
+  "format": "markdown",
+  "required": [
+    {"name": "教师/实验室", "type": "text", "example": "某大学计算机视觉实验室"},
+    {"name": "官方主页", "type": "text", "example": "学校官网主页链接；未找到则写“未找到”"},
+    {"name": "访问日期", "type": "date", "example": "2026-11-25"},
+    {"name": "代表性论文（原始链接）", "type": "text", "example": "论文标题和原始页面；未找到则写“未找到”"},
+    {"name": "任务与方法", "type": "text", "example": "图像分类；迁移学习"},
+    {"name": "数据集", "type": "text", "example": "论文使用的数据集；未说明则写“未说明”"},
+    {"name": "招募信息来源", "type": "text", "example": "学院公告；未发现则写“未发现”"},
+    {"name": "已完成项目及证据", "type": "text", "example": "项目名称及代码或结果位置；暂无则写“暂无”"},
+    {"name": "每周可投入时间", "type": "text", "example": "6小时/周"},
+    {"name": "阅读论文时最具体的问题", "type": "text", "example": "论文为何采用这一数据划分？"}
+  ]
+}

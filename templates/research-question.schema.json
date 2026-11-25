@@ -1,0 +1,20 @@
+{
+  "format": "markdown",
+  "required": [
+    {"name": "AI服务/模型", "type": "text", "example": "某图像分类服务"},
+    {"name": "任务", "type": "text", "example": "对固定测试集图片进行分类"},
+    {"name": "地区/时间", "type": "text", "example": "某地区，2025年"},
+    {"name": "公平比较单位", "type": "text", "example": "在相同准确率要求下完成1000张图片分类"},
+    {"name": "研究问题", "type": "text", "example": "不同电力口径会造成多大估算差异？"},
+    {"name": "可检验预期", "type": "text", "example": "电力碳强度提高时，运行排放估算会提高"},
+    {"name": "数据来源与依据", "type": "text", "example": "公开披露数据；缺失项标记为待补"},
+    {"name": "比较的核算口径", "type": "text", "example": "位置法与市场法"},
+    {"name": "纳入的生命周期阶段", "type": "text", "example": "运行阶段用电"},
+    {"name": "未纳入的阶段及原因", "type": "text", "example": "未纳入服务器制造，因缺少可核验数据"},
+    {"name": "计算方法", "type": "text", "example": "设备功率×运行时间×PUE×电力碳强度"},
+    {"name": "敏感性情景", "type": "text", "example": "对电力碳强度设低、中、高情景"},
+    {"name": "可能反例", "type": "text", "example": "结果未随电力碳强度变化"},
+    {"name": "可推翻我的预期的证据", "type": "text", "example": "口径变化没有明显改变估算结果"},
+    {"name": "结论允许适用的范围", "type": "text", "example": "仅适用于本研究任务和运行阶段边界"}
+  ]
+}

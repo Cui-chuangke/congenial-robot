@@ -1,0 +1,20 @@
+{
+  "format": "csv",
+  "required": [
+    {"name": "item", "type": "text", "example": "grid_factor"},
+    {"name": "definition", "type": "text", "example": "电力碳强度"},
+    {"name": "value", "type": "text", "example": "0.5"},
+    {"name": "unit", "type": "text", "example": "kg CO2e/kWh"},
+    {"name": "source_title", "type": "text", "example": "原始来源标题；没有则写“待补来源”"},
+    {"name": "source_url", "type": "text", "example": "原始链接；没有则写“待补来源”"},
+    {"name": "publisher", "type": "text", "example": "发布机构；没有则写“未知”"},
+    {"name": "publication_year", "type": "text", "example": "2025；未知则写“未知”"},
+    {"name": "accessed_date", "type": "text", "example": "2026-11-25"},
+    {"name": "region", "type": "text", "example": "数据适用地区；未知则写“未知”"},
+    {"name": "time_period", "type": "text", "example": "数据适用时间；未知则写“未知”"},
+    {"name": "measurement_or_estimate", "type": "text", "example": "实测/披露/基准/估算/假设"},
+    {"name": "assumption", "type": "text", "example": "使用的假设；没有则写“无”"},
+    {"name": "limitations", "type": "text", "example": "适用限制；未知则写“未知”"},
+    {"name": "verified_by", "type": "text", "example": "核验人；未核验则写“未核验”"}
+  ]
+}
